@@ -1,0 +1,99 @@
+/* General page styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Calculator container */
+  .calculator {
+    background: linear-gradient(145deg, #333, #4a4a4a);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #262626, -10px -10px 20px #4e4e4e;
+    width: 320px;
+    height: auto;
+  }
+  
+  /* Calculator display */
+  #display {
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    font-size: 32px;
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px #1b1b1b, inset -2px -2px 5px #303030;
+    outline: none;
+  }
+  
+  /* Buttons grid layout */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  /* Individual button styles */
+  button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px #303030, -2px -2px 5px #4e4e4e;
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+  }
+  
+  /* Active button effect */
+  button:active {
+    background-color: #666;
+    box-shadow: inset 2px 2px 5px #1b1b1b, inset -2px -2px 5px #303030;
+  }
+  
+  /* Equal button styling for emphasis */
+  button:nth-child(16) {
+    background-color: #ff9500;
+    color: white;
+    box-shadow: 2px 2px 5px #e68a00, -2px -2px 5px #ffac33;
+  }
+  
+  button:nth-child(16):hover {
+    background-color: #ffac33;
+  }
+  
+  button:nth-child(16):active {
+    background-color: #e68a00;
+  }
+  
+  /* Clear and Delete buttons for contrast */
+  button:nth-child(1), button:nth-child(2) {
+    background-color: #f44336;
+    color: white;
+    box-shadow: 2px 2px 5px #b3392e, -2px -2px 5px #ff5445;
+  }
+  
+  button:nth-child(1):hover, button:nth-child(2):hover {
+    background-color: #ff5445;
+  }
+  
+  button:nth-child(1):active, button:nth-child(2):active {
+    background-color: #b3392e;
+  }
+  
